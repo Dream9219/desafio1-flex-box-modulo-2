@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+    <style>
+        body{
+           margin: 0px;
+        } 
+        .contenedor{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #141313;
+        min-height: 100vh;
+        }
+        .barralateral{
+            border: 5px solid #e8ebe4;
+            flex-grow: 4;
+        }
+        .contenido{
+            border: 1px solid #e8ebe4;
+            flex-grow: 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e8ebe4;
+        }
+        .perfil{
+            border: 1px solid #2c4012;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+        .nuevochat{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #212025;
+            padding: 10px;
+        }
+        .contactos{
+            border: 1px solid #2e3f18;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+           
+        }
+        .contacto1{
+            border: 1px solid #2c4012;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            width: 600px;     
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="barralateral">
+            <div>
+                <div class="perfil">
+
+                <div style="display: flex;">
+                    <img src="assets/img/maria.jpg" style="width: 150px; height: 150px; margin-right: 8px; border-radius: 100% ;" alt="">
+                    <div>
+                       <h1>Maria</h1>
+                        <p style="font-size: 15px;">Activa ahora</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <img src="data:image/png;base64,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"style="width: 100px; alt="">
+                    
+                    <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png"style="width: 100px; alt="">
+              
+                </div>
+                </div>
+                <div class="nuevochat">
+                    <button style="padding: 10px; background-color: #A491D2; border: 15px solid #A491D2;">
+                        Nuevo Chat
+                    </button>
+                </div>
+                <div class="contactos">
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.27.14.jpg" style=" width: 150px; height: 150px; margin-right: px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Juanita</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.28.04.jpg" style=" width: 150px; height: 150px; margin-right: 8px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Magdalena</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.28.30.jpg" style="width: 150px; height: 150px; margin-right: 8px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Cristian</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.30.34.jpg" style="width: 150px; height: 150px; margin-right: 8px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Ignacio</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.30.54.jpg" style="width: 150px; height: 150px; margin-right: 8px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Juan Pablo</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.31.09.jpg" style="width: 150px; height: 150px; margin-right: 8px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Gonzalo</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.32.16.jpg" style="width: 150px; height: 150px; margin-right: 8px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Alberto</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    <div class="contacto1">
+                        <img src="assets/img/Screen Shot 2018-11-28 at 15.32.44.jpg" style="width: 150px; height: 150px; margin-right: 8px; border-radius: 100%;" alt="">
+                        <div>
+                           <h1>Maria Jose</h1>
+                            <p style="font-size: 15px;">At vero eos et accusa</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+
+            </div>
+
+        </div>
+        <div class="contenido">
+            <div style="display: flex">
+                <div>
+                    <img src="assets/img/hand.png" alt="">
+                    <h1>Comienza el Networking</h1>
+                    <p>Presiona el boton <span style="font-weight: 600;">"Nuevo chat"</span> para comenzar a crear nuevas 
+                    <br>redes de contacto para tu empresa o emprendimiento.</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
